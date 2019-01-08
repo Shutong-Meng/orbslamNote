@@ -1,13 +1,14 @@
 # orbslamNote
 Some Notes of using ORB_SLAM2
 
-测试双目Euroc数据集(ros)  
+**测试双目Euroc数据集(ros)
+
   roscore  
   rosrun ORB_SLAM2 Stereo Vocabulary/ORBvoc.txt Examples/Stereo/EuRoC.yaml true   
   rosbag play ~/Downloads/V1_01_easy.bag /cam0/image_raw:=/camera/left/image_raw /cam1/image_raw:=/camera/right/image_raw  
 
 
-关于四元数(quaternion)  
+**关于四元数(quaternion)  
 
 旋转矩阵冗余，欧拉旋转会存在万向锁问题。  
 
