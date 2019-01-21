@@ -6,6 +6,12 @@ Some Notes of using ORB_SLAM2
   roscore  
   rosrun ORB_SLAM2 Stereo Vocabulary/ORBvoc.txt Examples/Stereo/EuRoC.yaml true   
   rosbag play ~/Downloads/V1_01_easy.bag /cam0/image_raw:=/camera/left/image_raw /cam1/image_raw:=/camera/right/image_raw  
+  
+**实时测试双目**  
+
+  zed camera   1050Ti显卡  
+  rosrun ORB_SLAM2 Stereo Vocabulary/ORBvoc.txt ....yaml false  
+  ros_stereo.cc 更改订阅的话题-> /left/image_rect_color...  
 
 
 **关于四元数(quaternion)**  
