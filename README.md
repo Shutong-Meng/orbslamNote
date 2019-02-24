@@ -30,4 +30,11 @@ quaternion可以记为[w,V]或[w,(x,y,z)]
  
 为了对3D空间中的一个点p(x,y,z)进行旋转，需要先把它转换为quaternion形式p=[0, (x,y,z)]。  
 定义q=[cos(α/ 2), sin(α/ 2)N]为旋转quaternion，这里N为单位矢量长度的旋转轴，α为旋转角度。那么旋转之后的点p’则为:  
-p’ = qpq-1
+p’ = qpq-1 
+
+**测试结果与真实姿态比较**  
+
+使用evo_ape工具　https://github.com/MichaelGrupp/evo  
+可以先把bag转成tum格式　再使用evo_ape evo_rpe等与数据集ground_truth比较(euroc->tum)  
+
+
